@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Test responsive website</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css'>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="input-page" id="input-page">
+    <div class="group">
+      <input type="input" class="field" placeholder="Enter the URL and press enter" id='inputurl' onkeypress="entered(event)"/>
+      <label for="inputurl" class="label">Enter the URL (https://0xfederico.github.io) and press enter</label>
+    </div>
+  </div>
+
+  <div class="smartphone" id="smartphone">
+    <div class="accessory sound-box"></div>
+  	<div class="accessory camera"></div>
+    <iframe id="iframephone" width="300" height="540" scrolling="no" style="border:none;overflow:hidden"></iframe>
+  	<div class="accessory home-button"></div>
+  </div>
+  <div class="tablet" id="tablet">
+  	<div class="accessory sound-box"></div>
+  	<div class="accessory camera"></div>
+  	<iframe id="iframetablet" width="500" height="768" scrolling="no" style="border:none;overflow:hidden"></iframe>
+  	<div class="accessory home-button"></div>
+  </div>
+  <div class="tablet-landscape" id="tablet-landscape">
+  	<div class="accessory sound-box"></div>
+  	<div class="accessory camera"></div>
+  	<iframe id="iframetabletland" width="768" height="500" scrolling="no" style="border:none;overflow:hidden"></iframe>
+  	<div class="accessory home-button"></div>
+  </div>
+  <div class="laptop" id="laptop">
+  	<div class="accessory camera"></div>
+  	<iframe id="iframelaptop" width="1024" height="650" scrolling="no" style="border:none;overflow:hidden"></iframe>
+  	<div class="accessory home-button"></div>
+    <div class="laptop-base">
+      <div class="laptop-trackpad"></div>
+    </div>
+  </div>
+
+  <script  src="./script.js"></script>
+</body>
+</html>
